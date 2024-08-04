@@ -1,0 +1,53 @@
+.brand-logo {
+    width: 30%;
+}
+
+a{
+    padding: 0 0 !important;
+  }
+
+.menu a:hover{
+      
+    background: transparent;
+    text-decoration: underline; 
+
+}
+.nav-wrapper{
+border: 0!important;
+box-shadow: none!important;
+}
+.nav-wrapper .container {
+display: flex;
+justify-content: center;
+
+}
+
+.nav-wrapper .menu {
+display: flex;
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+.nav-wrapper .menu li {
+font-family: "Mate SC", serif;
+font-weight: 400;
+font-style: normal;
+margin: 0 70px;
+}
+
+@media screen and (max-width: 770px){
+
+    .brand-logo{
+      min-width: 70%;
+    }
+    .flow-text {
+        font-size: 1.2em;
+    }
+    .nav-wrapper .menu li {
+        border-radius: 10px solid rgb(248, 240, 229);
+        background-color: white;
+        line-height: 27px;
+        margin: 10 40px;
+    }
+}

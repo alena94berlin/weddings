@@ -1,0 +1,149 @@
+h6{
+  font-size: 1.30rem !important;
+  line-height: 130% !important;
+  padding-top: 5px;
+}
+
+
+.introduction{
+    background-image: url("../img/background.gif") !important;
+    background-size: contain;
+    background: no-repeat;
+    background-position: center;
+    background-position-y: top;
+    height:65%;
+    position: relative;
+}
+
+.introduction-box{
+  font-family: 'Edu SC', serif;
+  background: no-repeat;
+  background-image: url(../img/introduction-box.png);
+  background-size: contain;
+  position: relative;
+  padding-top: 87px;
+  padding-left: 117px;
+  padding-right: 59px;
+  padding-bottom: 110px;
+  height: 500px;
+  width: 460px;
+  margin-left: auto;
+  margin-right: auto;
+  background-position-x: center;
+  right: 14px;
+}
+
+
+.floating-images img{
+  width: 0;
+  height: 0;
+}
+
+.video-collection h4 {
+  font-family: 'Mate SC', serif;
+  margin-bottom: 40px;
+  font-size: 2.5em;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-collection h6 {
+  font-family: 'Mate SC', serif;
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #555;
+}
+
+.video-collection .col {
+  margin-bottom: 30px;
+  width: 30% !important;  
+}
+
+.row{
+  display: flex;
+}
+
+.see-more-btn {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  background-color: #c9b797;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.see-more-btn:hover {
+  background-color: #cfad80;
+}
+
+
+.pricelist img
+{  
+  max-width: 100%;
+  margin: 0px auto;
+}
+
+@media screen and (max-width: 770px){
+
+    .introduction{
+      background-image: none !important;  
+      height: 274px;
+      position: relative;
+    }
+
+    .introduction-box{
+      width: 338px;
+      padding:60px 41px 235px 78px;
+    } 
+
+    .floating-images img{
+      width: auto;
+      height: auto;
+      margin: 30px auto;
+      min-height: 28%;
+      max-width: 80%;      
+    }  
+    
+    .pricelist{
+      width: 100%;
+    }
+
+    .pricelist img{
+      width: auto;
+      height: auto;
+      margin: 0 auto;
+      min-height: 28%;
+      max-width: 100%;
+  }
+  
+  h5{
+    font-size: 1.2rem !important;
+  }
+  h6{
+    font-size: 1.1rem !important;
+    line-height: 110% !important;
+    padding-top: 0px !important;
+  }
+}
+
+  

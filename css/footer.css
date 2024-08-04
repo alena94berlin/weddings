@@ -1,0 +1,28 @@
+.site-footer {
+    background-color: #c9b797;; 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Mate SC', serif;
+  }
+
+  .social-media {
+    margin-top: 10px;
+  }
+  
+  .social-icon {
+    color: #ffffff; 
+    font-size: 1.0rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  footer a{
+    padding: 0px;
+  }
+  
+  .social-icon:hover {
+    color: #ddd;
+  }
+  

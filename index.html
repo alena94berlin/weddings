@@ -1,0 +1,120 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link type="text/css" href="css/index.css" rel="stylesheet">
+  <link type="text/css" href="css/header.css" rel="stylesheet">
+  <link type="text/css" href="css/footer.css" rel="stylesheet">
+  <link rel="icon" href="img/ring.png">
+  <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <title>Devotion - Wedding Videography</title>
+</head>
+<body>
+
+  <header class="center-align">
+    <a href="index.html">
+      <img class="brand-logo" src="img/logo.png" alt="Brand Logo">
+    </a>
+
+    <nav class="nav-wrapper transparent">
+      <div class="container">
+        <ul class="menu ">
+          <li><a id="nav-coll" class="flow-text grey-text text-darken-2" href="#">Video Collection</a></li>
+          <li><a id="nav-price"  class="flow-text grey-text text-darken-2" href="#">Services & Prices</a></li>
+        </ul>
+        </div>
+        </nav>
+  </header>
+
+<div class="container">
+  <div class="introduction center-align">
+    <div src="" class="introduction-box">
+         <h5>Where every smile becomes a memory</h5>
+        <h6>Specializing in capturing the genuine emotions 
+          and unforgettable moments of your wedding day. 
+          Every smile, every tear, and every joyous moment 
+          is beautifully documented, creating timeless 
+          memories to cherish forever. </h6>
+        </span>
+      </div>
+  </div>
+
+  <div class="floating-images center-align"> 
+    <img src="img/floating-images.gif" alt="Devotion - wedding videography" />   
+  </div>
+
+  <!-- Wedding Video Collection IzaSyCj9bpOIigmnStn2ZnbOmDy9xnLtLcHEj4 -->
+  <div id="video-collection" class="video-collection center-align">
+    <h4>Our Wedding Video Collection</h4>
+    <div class="row">
+      <div class="col s12 m4">
+        <div class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/GKa7-gCZy8k?modestbranding=1&rel=0&showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <h6>Holly & Patrick</h6>
+      </div>
+      <div class="col s12 m4">
+        <div class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/W88mMlDcSzU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <h6>Lilly & Camillo</h6>
+      </div>
+      <div class="col s12 m4">
+        <div class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/AubwUYLxqtc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <h6>Anna & Joseph</h6>
+      </div>
+    </div>
+    <button class="see-more-btn" onclick="location.href='video-collection.html'">See More</button>
+  </div>
+
+  <div id="pricelist" class="pricelist">
+    <img src="img/pricelist.jpg"  alt="Price List"/>  
+  </div>
+</div>
+
+<footer class="container site-footer"> 
+      <div class="social-media">
+    <a href="https://www.facebook.com/yourprofile" target="_blank" class="social-icon facebook" aria-label="Facebook">
+      <i class="material-icons">facebook</i>
+    </a>
+    <a href="https://www.instagram.com/alena_brln" target="_blank" class="social-icon instagram" aria-label="Instagram">
+      <i class="material-icons">instagram</i>
+    </a>
+    <a href="devotionweddings@gmail.com" target="_blank" class="social-icon email" aria-label="Email">
+      devotionweddings@gmail.com
+    </a>
+    <a href="www.devotionwedding.com" target="_blank" class="social-icon website" aria-label="Website">
+      www.devotionwedding.com
+    </a>
+    </div>
+  <p>&copy; 2024 Devotion - Wedding Videography. All rights reserved.</p>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+<script>
+   $(document).ready(function() {
+      $('#nav-coll').click(function(e) {
+        e.preventDefault();
+        $('html, body').animate({
+          scrollTop: $('#video-collection').offset().top
+        }, 800);
+      });
+
+      $('#nav-price').click(function(e) {
+        e.preventDefault();
+        $('html, body').animate({
+          scrollTop: $('#pricelist').offset().top
+        }, 800);
+      });
+    });
+</script>
+</body>
+</html>
