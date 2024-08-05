@@ -1,28 +1,30 @@
-.site-footer {
-    background-color: #ede3d9;; 
-    color: white;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-family: 'Mate SC', serif;
-  }
+.footer{
+  background-color: white;; 
+  color: rgb(44, 39, 39);
+  display: block;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.7rem !important;
+  padding: 5px 63px 1s0px 30px;
+  height: 130px;
+}
+.footer-col{
+   width: 39%;
+   padding: 0 15px;
+   
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #a07e4a;
+	text-transform: capitalize;
+	margin-bottom: 5px;
+	font-weight: 500;
+	position: relative;
+  margin-top: 7px;
+}
 
-  .social-media {
-    margin-top: 10px;
-  }
-  
-  .social-icon {
-    color: #ffffff; 
-    font-size: 1.0rem;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-
-  footer a{
-    padding: 0px;
-  }
-  
-  .social-icon:hover {
-    color: #ddd;
-  }
-  
+.footer a{
+  color: rgb(48, 45, 45);
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem !important;
+}

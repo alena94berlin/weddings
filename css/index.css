@@ -10,8 +10,8 @@
 
 .introduction-box{
   font-family: "Montserrat", sans-serif;
-  font-size: 0.9rem !important;
-  background: no-repeat;
+  font-size: 0.8rem !important;
+   background: no-repeat;
   background-image: url(../img/introduction-box.png);
   background-size: contain;
   position: relative;
@@ -34,7 +34,8 @@
 
 .introduction h6{
   font-weight: 400;
-  line-height: 20px !important;
+  line-height: 24px !important;
+  font-size: 1rem !important;
 }
 
 .floating-images img{
@@ -87,7 +88,7 @@
 .see-more-btn {
   padding: 10px 20px;
   font-size: 1.2em;
-  background-color: #c9b797;
+  background-color: #a07e4a;
   color: white;
   border: none;
   border-radius: 5px;
@@ -141,12 +142,12 @@
   
   h5{
     font-size: 1.1rem !important;
-    margin-bottom: 0pxx !important;
+    margin-bottom: 0px !important;
     line-height: 20px !important;
   }
-  h6{
-    font-size: 0.8rem !important;
-    line-height: 100% !important;
+  .introduction h6{
+    font-size: 0.9rem !important;
+    line-height: 16px !important;
     padding-top: 0px !important;
   }
 }
