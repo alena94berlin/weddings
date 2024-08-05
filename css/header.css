@@ -1,5 +1,6 @@
 .brand-logo {
-    width: 30%;
+    width: 20%;
+    margin-left: 20px;
 }
 
 a{
@@ -26,7 +27,7 @@ justify-content: center;
 display: flex;
 list-style-type: none;
 padding: 0;
-margin: 0;
+margin: 10;
 }
 
 .nav-wrapper .menu li {
@@ -39,7 +40,7 @@ margin: 0 70px;
 @media screen and (max-width: 770px){
 
     .brand-logo{
-      min-width: 70%;
+      min-width: 50%;
     }
     .flow-text {
         font-size: 1.2em;
@@ -47,7 +48,7 @@ margin: 0 70px;
     .nav-wrapper .menu li {
         border-radius: 10px solid rgb(248, 240, 229);
         background-color: white;
-        line-height: 27px;
-        margin: 10 40px;
+        line-height: 17px;
+        margin: 10px 40px;
     }
 }
