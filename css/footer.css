@@ -62,25 +62,24 @@
 @media screen and (max-width: 770px){
 .footer{
   position: relative;
-  width:90%;
+  width:100%;
  }
-.footer a{
+.footer {
   color: #a07e4a;
   font-family: "Montserrat", sans-serif;
   font-size: 0.8rem !important;
 }
 .fa{
   font-size: medium !important;
-  margin: 0px 8px;
+  margin: 0px 5px;
 }
 
 .infinite-icon{
-  width: 60px;
-  margin-left: 10px;
+  width: 50px;
   margin-top: -5px;
 }
 
 .row{
-  width: 90% !important;
+  width: 100% !important;
 }
 }
