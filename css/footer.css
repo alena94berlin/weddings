@@ -1,20 +1,23 @@
 .footer{
   background-color: white;; 
-  color: rgb(44, 39, 39);
-  display: block;
+  color: #a07e4a;
+  display: grid;
   flex-direction: column;
   font-family: "Montserrat", sans-serif;
-  font-size: 0.7rem !important;
-  padding: 5px 63px 1s0px 30px;
-  height: 130px;
+  font-size: 0.8rem !important;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 .footer-col{
-   width: 39%;
-   padding: 0 15px;
-   
+  text-align: left !important;
+  width: 70%;
+  position: relative;
 }
+
 .footer-col h4{
-	font-size: 18px;
+	font-size: 15px;
 	color: #a07e4a;
 	text-transform: capitalize;
 	margin-bottom: 5px;
@@ -24,7 +27,60 @@
 }
 
 .footer a{
-  color: rgb(48, 45, 45);
+  color: #a07e4a;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem !important;
+  line-height: 20px;
+}
+
+.row{
+  position: relative;
+  width: 70% !important;
+}
+
+.fa {
+  font-size: x-large !important;
+  margin: 0px 5%;
+  color: #a07e4a;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.infinite-icon{
+  width: 100px;
+  margin-left: 10px;
+  margin-top: -5px;
+}
+
+.footer-email{
+  width: 130% !important;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 770px){
+.footer{
+  position: relative;
+  width:90%;
+ }
+.footer a{
+  color: #a07e4a;
   font-family: "Montserrat", sans-serif;
   font-size: 0.8rem !important;
+}
+.fa{
+  font-size: medium !important;
+  margin: 0px 8px;
+}
+
+.infinite-icon{
+  width: 60px;
+  margin-left: 10px;
+  margin-top: -5px;
+}
+
+.row{
+  width: 90% !important;
+}
 }

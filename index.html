@@ -12,7 +12,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-  <title>Devotion - Wedding Videography</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Timeless - Wedding Videography</title>
+
+<script> 
+$(function(){
+  $("#footer").load("footer.html"); 
+});
+</script> 
 </head>
 <body>
 
@@ -80,39 +87,8 @@
 
 </br>
 <hr></br>
-<footer class="footer center-align">
-     <div class="row">
-      <div class="footer-col">
-        <h4>Our brand</h4>
-        <ul>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Our services</a></li>
-          <li><a href="#">FAQ</a></li>
-        </ul>
-      </div>
-     
-      <div class="footer-col">
-        <h4>Follow us</h4>
-        <ul>
-          <li>
-          <a href="https://www.facebook.com/timeless-wedding" target="_blank"  aria-label="Facebook">Facebook
-           <!--  <i class="material-icons">facebook</i> -->
-          </li>
-          <li>
-          <a href="https://www.instagram.com/timeless-wedding-videography" target="_blank" aria-label="Instagram">Instagram
-           <!--  <i class="material-icons">instagram</i> -->
-          </a></li>
-        </div>
-     
-      <div class="footer-col">
-        <h4>Contact us</h4>
-        <ul>
-          <li><a class="text-decoration: none" href="timeless-wedding@gmail.com">timeless-wedding@gmail.com</a></li>
-        </ul>
-      </div>
+<footer id="footer" class="footer center-align"></footer> 
 
-    </div>
-</footer>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -132,7 +108,18 @@
           scrollTop: $('#pricelist').offset().top
         }, 800);
       });
-    });
+   
+
+    
+            $("#footer").load("footer.html", function() {
+                $("body").fadeIn(1000);
+            });                                 
+          });
+
+          $(function(){
+  $("#footer").load("footer.html"); 
+});
+    
 </script>
 </body>
 </html>
