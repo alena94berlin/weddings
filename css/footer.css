@@ -1,3 +1,9 @@
+footer a{
+  text-decoration: none !important;
+  color: #a07e4a;
+  font-size: 0.8rem !important;
+}
+
 .footer{
   background-color: white;; 
   color: #a07e4a;
@@ -8,8 +14,8 @@
   position: relative;
   margin-left: auto;
   margin-right: auto;
-
 }
+
 .footer-col{
   text-align: left !important;
   width: 70%;
@@ -26,12 +32,7 @@
   margin-top: 7px;
 }
 
-.footer a{
-  color: #a07e4a;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1rem !important;
-  line-height: 20px;
-}
+
 
 .row{
   position: relative;
@@ -50,14 +51,9 @@
 
 .infinite-icon{
   width: 100px;
-  margin-left: 10px;
-  margin-top: -5px;
+  margin-top: -15px;
 }
 
-.footer-email{
-  width: 130% !important;
-  text-decoration: none;
-}
 
 @media screen and (max-width: 770px){
 .footer{
@@ -79,7 +75,11 @@
   margin-top: -5px;
 }
 
+.footer-col{
+  width: 30% !important;
+}
+
 .row{
-  width: 100% !important;
+  width: 95% !important;
 }
 }

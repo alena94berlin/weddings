@@ -15,11 +15,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Timeless - Wedding Videography</title>
 
-<script> 
-$(function(){
-  $("#footer").load("footer.html"); 
-});
-</script> 
 </head>
 <body>
 
@@ -55,29 +50,40 @@ $(function(){
     <img src="img/floating-images.gif" alt="Devotion - wedding videography" />   
   </div>
 
-  <!-- Wedding Video Collection IzaSyCj9bpOIigmnStn2ZnbOmDy9xnLtLcHEj4 -->
   <div id="video-collection" class="video-collection center-align">
     <h4>Our Wedding Video Collection</h4>
+
     <div class="row">
+
       <div class="col s12 m4">
-        <div class="video-container">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/GKa7-gCZy8k?modestbranding=1&rel=0&showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div   class="video-container">
+          <video width="560" height="315" class="responsive-video" controls>
+            <source src="/Videos/Dubai.mp4" type="video/mp4">
+          </video>
         </div>
-        <h6>Holly & Patrick</h6>
-      </div>
-      <div class="col s12 m4">
-        <div class="video-container">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/W88mMlDcSzU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <h6>Lilly & Camillo</h6>
-      </div>
-      <div class="col s12 m4">
-        <div class="video-container">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/AubwUYLxqtc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <h6>Anna & Joseph</h6>
-      </div>
+      <h6>Holly & Patrick</h6>       
     </div>
+
+    <div class="col s12 m4">
+      <div   class="video-container">
+        <video width="560" height="315" class="responsive-video" controls>
+          <source src="/Videos/Zanzibar.mp4" type="video/mp4">
+        </video>
+      </div>
+    <h6>Holly & Patrick</h6>       
+  </div>
+
+  <div class="col s12 m4">
+    <div   class="video-container">
+      <video width="560" height="315" class="responsive-video" controls>
+        <source src="/Videos/OlympMountain.mp4" type="video/mp4">
+      </video>
+    </div>
+  <h6>Holly & Patrick</h6>       
+</div>
+
+</div>
+    
     <button class="see-more-btn" onclick="location.href='video-collection.html'">See More</button>
   </div>
 
@@ -88,9 +94,7 @@ $(function(){
 </br>
 <hr></br>
 <footer id="footer" class="footer center-align"></footer> 
-
 </div>
-
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 <script>
@@ -107,19 +111,13 @@ $(function(){
         $('html, body').animate({
           scrollTop: $('#pricelist').offset().top
         }, 800);
-      });
-   
-
+      });  
     
-            $("#footer").load("footer.html", function() {
-                $("body").fadeIn(1000);
-            });                                 
-          });
+      $("#footer").load("footer.html", function() {
+          $("body").fadeIn(1000);
+      });                                 
+    });
 
-          $(function(){
-  $("#footer").load("footer.html"); 
-});
-    
 </script>
 </body>
 </html>
