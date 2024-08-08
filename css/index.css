@@ -78,10 +78,9 @@
 
 .video-collection .col {
   margin-bottom: 30px;
-  width: 30% !important;  
 }
 
-.row{
+.row-videocollection{
   display: flex;
 }
 
@@ -128,6 +127,14 @@
       max-width: 80%;      
     }  
     
+    #row-videocollection{
+      display: grid;
+
+    }
+    .video-collection .col {
+      margin-bottom: 10px;
+    }
+
     .pricelist{
       width: 100%;
     }

@@ -32,9 +32,8 @@ footer a{
   margin-top: 7px;
 }
 
-
-
-.row{
+#row-footer{
+  display: flex;
   position: relative;
   width: 70% !important;
 }
@@ -79,7 +78,7 @@ footer a{
   width: 30% !important;
 }
 
-.row{
+#row-footer{
   width: 95% !important;
 }
 }
