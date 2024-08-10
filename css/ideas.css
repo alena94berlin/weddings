@@ -1,14 +1,14 @@
 
   .idea-post-frame {
     position: relative;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 90%;
+    padding: 10px;
+    margin: 50px auto !important;
+    max-width: 100%;
     background-color: transparent;
     box-sizing: border-box;
     font-family: "Arsenal SC", sans-serif !important;
     font-style: normal  !important;
-    margin-bottom: 40px;
+    margin-bottom: 90px !important;
 }
 
 
@@ -41,17 +41,16 @@
 .idea-title {
     text-align: center;
     font-family: 'Playfair Display', serif;
-    color: #7b3e19;
+    color: #a07e4a;
     margin-bottom: 25px;
     font-size: 1.8em;
 }
 
 .idea-image {
     position: relative !important;
-    width: 80% !important;
+    width: 60% !important;
     height: auto !important;
     border-radius: 8px !important;
-    margin-bottom: 20px !important;
 }
 
 .idea-content {
@@ -60,12 +59,12 @@
     line-height: 1.8;
     font-size: 1em;
     text-align: justify;
-    padding: 0px 23px !important;
+
 }
 
 .idea-content a{
     text-decoration: underline !important;
-    color: #7b3e19 !important;
+    color: #a07e4a !important;
     float: right !important;
     margin-top: -18px !important;
     font-size: medium;
@@ -77,42 +76,48 @@
     color: #333 !important;
 }
 
-.details-link {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 1em;
-    color: #ffffff;
-    background-color: #7b3e19;
-    border-radius: 5px;
-    text-decoration: none;
-}
 
-.details-link:hover {
-    background-color: #9a7c5c;
+h1 {
+    font-family: 'Garamond', serif !important; /* Classic serif font */
+    font-size: 40px !important; /* Large and impactful */
+    font-weight: 600 !important; /* Semi-bold for subtle emphasis */
+    color: #4a4a4a !important; /* Soft gray color for a sophisticated look */
+    text-align: center !important; /* Center alignment */
+    margin: 40px 0 !important; /* Spacing around the title */
+    position: relative !important; /* For positioning decorative elements */
+    text-transform: uppercase !important; /* Uppercase for elegance */
+    background-color: antiquewhite;
+    border-radius: 8px;
+    margin-bottom: 40px;
 }
 
 /* Responsive adjustments */
 @media (min-width: 600px) {
-    .idea-post-frame {
-        max-width: 80%;
+  
+
+
+    .idea-content {
+    padding: 15px 30px !important;
     }
-    
+
     .idea-title {
         font-size: 2em;
     }
 }
 
 @media (min-width: 900px) {
-    .idea-post-frame {
-        max-width: 70%;
-    }
-    
+       
     .idea-title {
         font-size: 2.2em;
     }
 
     .idea-content {
         font-size: 1.1em;
+        padding: 15px 130px !important;
+    }
+}
+@media (max-width: 670px) {
+    h1{
+    font-size: 30px !important;
     }
 }
