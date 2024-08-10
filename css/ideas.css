@@ -1,0 +1,131 @@
+/* 
+.container {
+    width: 70% !important;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+  .container h4 {
+    font-family: "Arsenal SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+  }
+  
+
+  .idea{
+    width:auto;
+  }
+  
+  .idea img{
+    width: 40%;
+  } */
+
+  .idea-post-frame {
+    position: relative;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 90%;
+    background-color: transparent;
+    box-sizing: border-box;
+    font-family: "Arsenal SC", sans-serif !important;
+    font-style: normal  !important;
+    margin-bottom: 40px;
+}
+
+.idea-content a{
+    text-decoration: rgb(66, 66, 66) !important;
+    color: #333 !important;
+    float: right !important;
+    margin-top: -10px;
+}
+
+.idea-post-frame:before,
+.idea-post-frame:after {
+    content: "";
+    position: absolute;
+    border: 1px solid #bba58e;
+    transition: all 0.25s ease;
+    opacity: 1;
+}
+
+.idea-post-frame:before {
+    top: -5px;
+    left: -7px;
+    width: calc(100% + 12px);
+    height: calc(100% + 12px);
+    border-radius: 10px;
+}
+
+.idea-post-frame:after {
+    top: -10px;
+    left: -2px;
+    width: calc(100% + 15px);
+    height: calc(100% + 20px);
+    border-radius: 15px;
+}
+
+.idea-title {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    color: #7b3e19;
+    margin-bottom: 25px;
+    font-size: 1.8em;
+}
+
+.idea-image {
+    position: relative !important;
+    width: 80% !important;
+    height: auto !important;
+    border-radius: 8px !important;
+    margin-bottom: 20px !important;
+}
+
+.idea-content {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.8;
+    font-size: 1em;
+    text-align: justify;
+}
+
+.details-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #7b3e19;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.details-link:hover {
+    background-color: #9a7c5c;
+}
+
+/* Responsive adjustments */
+@media (min-width: 600px) {
+    .idea-post-frame {
+        max-width: 80%;
+    }
+    
+    .idea-title {
+        font-size: 2em;
+    }
+}
+
+@media (min-width: 900px) {
+    .idea-post-frame {
+        max-width: 70%;
+    }
+    
+    .idea-title {
+        font-size: 2.2em;
+    }
+
+    .idea-content {
+        font-size: 1.1em;
+    }
+}

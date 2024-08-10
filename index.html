@@ -7,8 +7,6 @@
   <link type="text/css" href="css/elements/creative-button.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">  <!--Intro-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-  <title>Timeless - Wedding Videography</title>
-
 </head>
 <body>
 
@@ -20,7 +18,7 @@
          <h5>Looking for creative ideas your wedding day?</h5>
         <h6>Explore our collection of creative wedding ideas to make your speacial day unforgettable!</h6>
         <div id="ideas-button-div">       
-          <a class="btn--gold">Ideas</a>
+          <a href="ideas.html" class="btn--gold">Ideas</a>
        </div>
       </div>
   </div>
@@ -78,7 +76,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 <script>
    $(document).ready(function() {
-      $('#nav-coll').click(function(e) {
+     /*  $('#nav-coll').click(function(e) {
         e.preventDefault();
         $('html, body').animate({
           scrollTop: $('#video-collection').offset().top
@@ -90,7 +88,7 @@
         $('html, body').animate({
           scrollTop: $('#pricelist').offset().top
         }, 800);
-      });  
+      });   */
     
       $("#header").load("elements/header.html", function() {
           $("body").fadeIn(1000);
