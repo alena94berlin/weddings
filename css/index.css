@@ -1,5 +1,5 @@
 .introduction{
-    background-image: url("../img/background.gif") !important;
+    background-image: url("../media/img/background.gif") !important;
     background-size: contain;
     background: no-repeat;
     background-position: center;
@@ -12,7 +12,7 @@
   font-family: "Montserrat", sans-serif;
   font-size: 0.8rem !important;
    background: no-repeat;
-  background-image: url(../img/introduction-box.png);
+  background-image: url(../media/img/introduction-box.png);
   background-size: contain;
   position: relative;
   padding: 98px 60px 110px 117px;

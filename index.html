@@ -4,34 +4,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link type="text/css" href="css/index.css" rel="stylesheet">
-  <link type="text/css" href="css/elements/header.css" rel="stylesheet">
   <link type="text/css" href="css/elements/creative-button.css" rel="stylesheet">
-  <link rel="icon" href="img/ring.png">
-  <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">  <!--Intro-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Timeless - Wedding Videography</title>
 
 </head>
 <body>
 
-  <header class="center-align">
-    <a href="index.html">
-      <img class="brand-logo" src="img/logo.png" alt="Brand Logo">
-    </a>
-
-    <nav class="nav-wrapper transparent">
-      <div class="container">
-        <ul class="menu ">
-          <li><a id="nav-coll" class="flow-text grey-text text-darken-2" href="#">Video Collection</a></li>
-          <li><a id="nav-price"  class="flow-text grey-text text-darken-2" href="#">Services & Prices</a></li>
-        </ul>
-        </div>
-        </nav>
-  </header>
+  <header id="header" class="center-align"></header>
 
 <div class="container">
   <div class="introduction center-align">
@@ -45,7 +26,7 @@
   </div>
 
   <div class="floating-images center-align"> 
-    <img src="img/floating-images.gif" alt="Devotion - wedding videography" />   
+    <img src="media/img/floating-images.gif" alt="Devotion - wedding videography" />   
   </div>
 
   <div id="video-collection" class="video-collection center-align">
@@ -56,7 +37,7 @@
       <div class="col s12 m4">
         <div class="video-container">
           <video width="560" height="315" class="responsive-video" controls>
-            <source src="/Videos/Dubai.mp4" type="video/mp4">
+            <source src="media/videos/Dubai.mp4" type="video/mp4">
           </video>
         </div>
       <h6>Holly & Patrick</h6>       
@@ -65,7 +46,7 @@
     <div class="col s12 m4">
       <div   class="video-container">
         <video width="560" height="315" class="responsive-video" controls>
-          <source src="/Videos/Zanzibar.mp4" type="video/mp4">
+          <source src="media/videos/Zanzibar.mp4" type="video/mp4">
         </video>
       </div>
     <h6>Holly & Patrick</h6>       
@@ -74,7 +55,7 @@
   <div class="col s12 m4">
     <div   class="video-container">
       <video width="560" height="315" class="responsive-video" controls>
-        <source src="/Videos/OlympMountain.mp4" type="video/mp4">
+        <source src="media/videos/OlympMountain.mp4" type="video/mp4">
       </video>
     </div>
   <h6>Holly & Patrick</h6>       
@@ -86,7 +67,7 @@
   </div>
 
   <div id="pricelist" class="pricelist">
-    <img src="img/pricelist.jpg"  alt="Price List"/>  
+    <img src="media/img/pricelist.jpg"  alt="Price List"/>  
   </div>
 
 </br>
@@ -111,7 +92,10 @@
         }, 800);
       });  
     
-      $("#footer").load("footer.html", function() {
+      $("#header").load("elements/header.html", function() {
+          $("body").fadeIn(1000);
+      });  
+      $("#footer").load("elements/footer.html", function() {
           $("body").fadeIn(1000);
       });                                 
     });
