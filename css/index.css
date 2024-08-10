@@ -15,10 +15,7 @@
   background-image: url(../img/introduction-box.png);
   background-size: contain;
   position: relative;
-  padding-top: 87px;
-  padding-left: 117px;
-  padding-right: 59px;
-  padding-bottom: 110px;
+  padding: 98px 60px 110px 117px;
   height: 500px;
   width: 460px;
   margin-left: auto;
@@ -30,6 +27,7 @@
 .introduction h5{
   font-weight: 500;
   margin-bottom: 15px;
+  font-size: 1.2rem !important;
 } 
 
 .introduction h6{
@@ -106,6 +104,7 @@
   margin: 0px auto;
 }
 
+
 @media screen and (max-width: 770px){
 
     .introduction{
@@ -116,7 +115,7 @@
 
     .introduction-box{
       width: 338px;
-      padding:60px 41px 235px 78px;
+      padding: 67px 42px 235px 79px;
     } 
 
     .floating-images img{
