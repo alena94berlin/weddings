@@ -120,4 +120,8 @@ h1 {
     h1{
     font-size: 30px !important;
     }
+
+    .idea-content {
+        padding: 15px 15px !important;
+    }
 }
