@@ -58,7 +58,6 @@
     line-height: 1.8;
     font-size: 1em;
     text-align: justify;
-
 }
 
 .idea-content a{
@@ -88,6 +87,7 @@ h1 {
     background-color: antiquewhite;
     border-radius: 8px;
     margin-bottom: 40px;
+    padding: 10px 0 !important;
 }
 
 /* Responsive adjustments */
@@ -117,7 +117,7 @@ h1 {
 }
 @media (max-width: 670px) {
     h1{
-    font-size: 15px !important;
+    font-size: 20px !important;
     font-weight: 600 !important;
     }
 

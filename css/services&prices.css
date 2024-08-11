@@ -10,6 +10,7 @@ h1 {
     background-color: antiquewhite;
     border-radius: 8px;
     margin-bottom: 0px !important;
+    padding: 10px 0 !important;
 }
 
 .pricelist img
@@ -33,7 +34,7 @@ h1 {
   }
 
     h1{
-    font-size: 15px !important;
+    font-size: 20px !important;
     font-weight: 600 !important;
     }
 }
