@@ -119,7 +119,7 @@ background-color: white !important;
 
     .introduction-box{
       width: 338px;
-      padding: 67px 42px 235px 79px;
+      padding: 63px 42px 235px 79px;
     } 
 
     .floating-images img{
@@ -151,7 +151,7 @@ background-color: white !important;
   }
   
   h5{
-    font-size: 1rem !important;
+    font-size: 0.9rem !important;
     margin-bottom: 0px !important;
     line-height: 18px !important;
   }
