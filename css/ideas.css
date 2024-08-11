@@ -49,7 +49,6 @@
 .idea-image {
     position: relative !important;
     width: 60% !important;
-    height: auto !important;
     border-radius: 8px !important;
 }
 
@@ -118,10 +117,14 @@ h1 {
 }
 @media (max-width: 670px) {
     h1{
-    font-size: 30px !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
     }
 
     .idea-content {
-        padding: 15px 15px !important;
+        padding: 20px 15px !important;
+    }
+    .idea-image {
+        width: 80% !important;
     }
 }
