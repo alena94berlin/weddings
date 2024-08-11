@@ -1,0 +1,39 @@
+h1 {
+    font-family: 'Garamond', serif !important; 
+    font-size: 40px !important; 
+    font-weight: 600 !important; 
+    color: #4a4a4a !important; 
+    text-align: center !important; 
+    margin-top: 40px !important; 
+    position: relative !important;
+    text-transform: uppercase !important; 
+    background-color: antiquewhite;
+    border-radius: 8px;
+    margin-bottom: 0px !important;
+}
+
+.pricelist img
+{  
+  width: 100% !important;
+  margin: 0px auto;
+}
+
+@media screen and (max-width: 670px){
+
+    .pricelist{
+      width: 100%;
+    }
+
+    .pricelist img{
+      width: auto;
+      height: auto;
+      margin: 0 auto;
+      min-height: 28%;
+      max-width: 100%;
+  }
+
+    h1{
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    }
+}

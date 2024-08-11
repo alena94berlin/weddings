@@ -77,14 +77,14 @@
 
 
 h1 {
-    font-family: 'Garamond', serif !important; /* Classic serif font */
-    font-size: 40px !important; /* Large and impactful */
-    font-weight: 600 !important; /* Semi-bold for subtle emphasis */
-    color: #4a4a4a !important; /* Soft gray color for a sophisticated look */
-    text-align: center !important; /* Center alignment */
-    margin: 40px 0 !important; /* Spacing around the title */
-    position: relative !important; /* For positioning decorative elements */
-    text-transform: uppercase !important; /* Uppercase for elegance */
+    font-family: 'Garamond', serif !important; 
+    font-size: 40px !important; 
+    font-weight: 600 !important; 
+    color: #4a4a4a !important; 
+    text-align: center !important; 
+    margin: 40px 0 !important; 
+    position: relative !important;
+    text-transform: uppercase !important; 
     background-color: antiquewhite;
     border-radius: 8px;
     margin-bottom: 40px;
@@ -125,6 +125,6 @@ h1 {
         padding: 20px 15px !important;
     }
     .idea-image {
-        width: 80% !important;
+        width: 90% !important;
     }
 }

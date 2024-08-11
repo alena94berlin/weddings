@@ -1,3 +1,7 @@
+html, body, header, footer{
+background-color: white !important;
+}
+
 .introduction{
     background-image: url("../media/img/background.gif") !important;
     background-size: contain;
@@ -156,6 +160,10 @@
     line-height: 16px !important;
     padding-top: 0px !important;
   }
+
+  html, body, header, footer{
+    background-color: white !important;
+    }
 }
 
   
