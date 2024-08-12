@@ -94,7 +94,8 @@
     .hamburger-menu {
       display: block;
       position: absolute;
-      top: 35px;
+      color: #a07e4a;
+      top: 20px;
       right: 30px;
      z-index: 1001; /* Higher than other elements */
       
@@ -120,7 +121,9 @@
       width: 200px !important;
       height: 91px;
       position: relative;
-      margin-left: 42px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 4%;
     }
   
     
