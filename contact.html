@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link type="text/css" href="css/contact.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">  <!--Intro-->
+  <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+</head>
+
+<body>
+    <header id="header" class="center-align"></header>
+
+<div class="container">
+    
+    <h1>Contact us</h1>
+    <form id="contact" action="" method="post">
+
+        <h3>Contact us today, and get a reply within 24 hours!</h3>
+        <fieldset>
+          <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+        </fieldset>
+        <fieldset>
+          <input placeholder="Your Email Address" type="email" tabindex="2" required>
+        </fieldset>
+        <fieldset>
+          <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+        </fieldset>
+         <fieldset>
+          <textarea placeholder="Your Message" tabindex="4" required></textarea>
+        </fieldset>
+        <fieldset style="text-align: center">
+          <button  name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+        </fieldset>
+      </form>
+     
+      
+
+</br>
+<hr></br>
+<footer id="footer" class="footer center-align"></footer> 
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+<script>
+ 
+      $("#header").load("elements/header.html", function() {
+          $("body").fadeIn(1000);
+      });  
+      $("#footer").load("elements/footer.html", function() {
+          $("body").fadeIn(1000);
+      });                                 
+
+
+</script>
+</body>
+</html>

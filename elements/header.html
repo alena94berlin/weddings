@@ -3,20 +3,27 @@
   <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet"> <!--Menue-->
     <link rel="icon" href="media/img/ring.png">
     <link type="text/css" href="css/elements/header.css" rel="stylesheet">
+    <script src="../js/main.js"></script>
     <title>Timeless - Wedding Videography</title>
 </head>
 
-<div class="center-align">
-    <a href="index.html">
-      <img class="brand-logo" src="media/img/logo.png" alt="Brand Logo">
-    </a>
+<div class="nav-container">
 
-    <nav class="nav-wrapper transparent">
-      <div class="container">
-        <ul class="menu ">
-          <li><a id="nav-coll" class="flow-text grey-text text-darken-2" href="../video-collection.html">Video Collection</a></li>
-          <li><a id="nav-price"  class="flow-text grey-text text-darken-2" href="../services&prices.html">Services & Prices</a></li>
-        </ul>
-        </div>
-        </nav>
-    </div>
+  <img  id="hiddenlogo" class="brand-logo" src="media/img/logo.png" alt="Brand Logo">
+
+<div class="hamburger-menu" onclick="toggleMenu()">
+ &#9776;
+</div>
+<ul class="nav-menu">
+ <li><a id="nav-coll" class="menu-item flow-text grey-text text-darken-2" href="../video-collection.html">Video Collection</a></li>
+ <li><a id="nav-price" class="menu-item flow-text grey-text text-darken-2" href="../services&prices.html">Services & Prices</a></li>
+ <li id="logo" class="logo">
+   <a href="index.html">
+     <img class="brand-logo" src="media/img/logo.png" alt="Brand Logo">
+   </a>
+ </li>
+ <li><a id="nav-home" class="menu-item flow-text grey-text text-darken-2" href="../index.html">Home</a></li>
+ <li><a id="nav-about" class="menu-item flow-text grey-text text-darken-2" href="../about2.html">About</a></li>
+ <li><a id="nav-contact" class="menu-item flow-text grey-text text-darken-2" href="../contact.html">Contact</a></li>
+</ul>
+</div>
