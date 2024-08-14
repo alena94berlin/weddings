@@ -7,31 +7,28 @@
     text-align: center;
     margin-top: 20px;
   }
+  
   .video-container {
     overflow: visible !important;
-  }
+    width: 100%; /* Adjust as needed */
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
 
-  .video-container iframe{
-    border-radius: 40px;
-  }
+.responsive-video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
   
   .video-with-description{
-    margin: 70px 0px 60px 0px !important;
+    margin: 50px 0px 100px 0px !important;
     font-size: 1.1rem !important;
   }
 
-  iframe {
-    width: 100%;
-    height: 315px;
-  }
 
-.video-title{
-  text-align: center;
-  font-family: 'Playfair Display', serif;
-  color: #a07e4a;
-  margin-bottom: 25px !important;
-  font-size: 1.8em !important;
-}
 
 @media screen and (max-width: 670px){
 

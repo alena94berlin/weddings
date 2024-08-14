@@ -38,13 +38,6 @@
     border-radius: 15px;
 }
 
-.idea-title {
-    text-align: center;
-    font-family: 'Playfair Display', serif;
-    color: #a07e4a;
-    margin-bottom: 25px;
-    font-size: 1.8em;
-}
 
 .idea-image {
     position: relative !important;
