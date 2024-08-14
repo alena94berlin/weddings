@@ -13,23 +13,54 @@ h1 {
     padding: 10px 0 !important;
 }
 
-h2{
-    font-size: 2.5em !important;
-}
-
-h3{
-        font-family: 'Roboto', sans-serif;
-        color: #333;
-        line-height: 1.4;
-        text-align: justify;
-        font-size: medium !important;
-    
-}
-
 .container{
     width: 70% !important;
     min-height: 700px !important;
     align-items: center !important;
     text-align: justify;
+}
 
+.description{
+    display: flex;
+    width: 80%;
+    margin: 70px auto;
+    align-items: center;    /* Centers items horizontally */
+}
+.description span{
+    margin: 0px 9px 0px 50px;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+}
+.description h2{
+    font-size: 2.5em !important;
+    margin-top: 0 !important;
+    text-align: center; /* Centers text within the <h2> */
+}
+
+.description p{
+    line-height: 25px;
+    font-size: medium;    
+}
+.description img{
+    width: 300px;
+    height: fit-content;
+    align-self: center;
+}
+
+@media (max-width: 1230px) {
+    .container{
+        width: 90% !important;
+    }
+    .description{
+        display: block;
+        width: 95%;
+        margin: 20px auto;
+        text-align: center; 
+    }
+    .description span{
+        margin: 0 10px;
+    }
+    .description img{
+        margin-bottom: 20px;
+    }
 }
