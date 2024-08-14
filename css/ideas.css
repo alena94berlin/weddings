@@ -74,22 +74,6 @@
     color: #333 !important;
 }
 
-
-h1 {
-    font-family: 'Garamond', serif !important; 
-    font-size: 40px !important; 
-    font-weight: 600 !important; 
-    color: #4a4a4a !important; 
-    text-align: center !important; 
-    margin: 40px 0 !important; 
-    position: relative !important;
-    text-transform: uppercase !important; 
-    background-color: antiquewhite;
-    border-radius: 8px;
-    margin-bottom: 40px;
-    padding: 10px 0 !important;
-}
-
 /* Responsive adjustments */
 @media (min-width: 600px) {
   
@@ -116,10 +100,7 @@ h1 {
     }
 }
 @media (max-width: 670px) {
-    h1{
-    font-size: 20px !important;
-    font-weight: 600 !important;
-    }
+   
 
     .idea-content {
         padding: 20px 15px !important;

@@ -49,9 +49,6 @@
   text-transform: uppercase;
 }
 
-.responsive-video{
-  width: 80%;
-}
 
 .video-collection h6 {
   font-family: 'Mate SC', serif;
@@ -61,7 +58,8 @@
 }
 
 .video-collection {
-  margin: 40px 0 !important;
+  margin: 40px auto !important;
+  width: 80%;
 }
 
 

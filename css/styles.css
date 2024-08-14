@@ -1,3 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
 html, body, header, footer, .container{
     background: white !important;
+    font-family: "Montserrat", sans-serif;
+    }
+
+    
+
+h1 {
+    font-family: 'Garamond', serif !important; 
+    font-size: 40px !important; 
+    font-weight: 600 !important; 
+    color: #4a4a4a !important; 
+    text-align: center !important; 
+    margin: 40px 0 !important; 
+    position: relative !important;
+    text-transform: uppercase !important; 
+    background-color: antiquewhite;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    padding: 10px 0 !important;
+}
+
+h2 {
+    font-family:  "Playwrite DE Grund" !important; 
+    color: #2b2b2b !important; 
+    margin-bottom: 15px !important;
+    font-size: 1.8em !important;
+}
+
+
+
+    @media (max-width: 670px) {
+        h1{
+        font-size: 20px !important;
+        font-weight: 600 !important;
+        }
     }
