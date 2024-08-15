@@ -1,8 +1,4 @@
 
-  .container {
-    margin-top: 20px;
-    width: 60% !important;
-  }
   .video-collection {
     text-align: center;
     margin-top: 20px;
@@ -31,10 +27,6 @@
 
 
 @media screen and (max-width: 670px){
-
-  .container{
-    width: 90% !important;
-  }
 
   .video-container {
     width: 100% !important;
