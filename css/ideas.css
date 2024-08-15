@@ -2,16 +2,16 @@
   .idea-post-frame {
     position: relative;
     padding: 10px;
-    margin: 50px auto !important;
+    margin: 10px auto !important;
     max-width: 100%;
     background-color: transparent;
     box-sizing: border-box;
     font-family: "Arsenal SC", sans-serif !important;
     font-style: normal  !important;
-    margin-bottom: 90px !important;
+    margin-bottom: 50px !important;
 }
 
-
+/* 
 
 .idea-post-frame:before,
 .idea-post-frame:after {
@@ -36,7 +36,7 @@
     width: calc(100% + 15px);
     height: calc(100% + 20px);
     border-radius: 15px;
-}
+} */
 
 
 .idea-image {
@@ -95,6 +95,11 @@
 @media (max-width: 670px) {
    
 
+    .idea-post-frame {
+        
+        margin-bottom: 10px !important;
+    }
+    
     .idea-content {
         padding: 20px 15px !important;
     }

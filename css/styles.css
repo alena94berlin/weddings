@@ -29,9 +29,10 @@ h1 {
 h2 {
     font-family:  "Playwrite DE Grund" !important; 
     color: #2b2b2b !important; 
-    margin: 0 0 15px 0 !important;
+    margin: 15 0 !important;
     font-size: 1.7em !important;
     text-align: center !important;
+    line-height: 25px !important;
 }
 
 p{

@@ -5,7 +5,9 @@
 	background:#F9F9F9;
 	padding: 20px 25px;  
 }
-
+h2{
+	font-weight: 200 !important;
+}
 
 
 fieldset {
@@ -21,7 +23,7 @@ fieldset {
 	border:1px solid #CCC;
 	background:#FFF;
 	margin:0 0 5px;
-	padding: 10px;
+	padding: 2px;
     font-size: large !important;
 }
 
