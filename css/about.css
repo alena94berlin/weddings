@@ -16,16 +16,8 @@
     font-family: 'Montserrat', sans-serif;
     color: #333;
 }
-.description h2{
-    font-size: 2.5em !important;
-    margin-top: 0 !important;
-    text-align: center; /* Centers text within the <h2> */
-}
 
-.description p{
-    line-height: 25px;
-    font-size: medium;    
-}
+
 .description img{
     width: 300px;
     height: fit-content;
