@@ -9,10 +9,50 @@
   <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+      (function() {
+          // https://dashboard.emailjs.com/admin/account
+          emailjs.init({
+            publicKey: "bYlDXRKw2Yt6qjyD8",
+          });
+      })();
+  </script>
+  <script type="text/javascript">
+      window.onload = function() {
+          document.getElementById('contact').addEventListener('submit', function(event) {
+              event.preventDefault();
+               // Collect form data
+            const name = document.getElementById('name').value;
+            const user_email = document.getElementById('user_email').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+
+            // Send the email using EmailJS
+            emailjs.send('service_trmf7ng', 'template_6qs5y6s',  {
+                name: name,
+                user_email : user_email,
+                phone: phone || '',
+                message: message,
+
+            })
+            .then(() => {
+                    // Hide the form and show the thank you message
+                    document.getElementById('contact').style.display = 'none';
+                    document.querySelector('.thank-you-message').style.display = 'block';
+                }, (error) => {
+                    console.log('FAILED...', error);
+                    alert('Sorry, something went wrong. Please try again later.');
+                });
+            });
+        };
+  </script>
+
 </head>
 
 <body>
-  <header id="header"></header>
+  <header id="header" autofocus></header>
   <div class="container center-align">
 
     <h1>Services and Prices</h1>
@@ -30,24 +70,27 @@
       </div>
 <br/>
 
-    <form id="contact" action="" method="post">
+    <form id="contact">
       <h2>Interested? Got questions? Let's chat!</h2>
-        <fieldset>
-          <input placeholder="Your name" type="text" tabindex="1" required autofocus>
-        </fieldset>
-        <fieldset>
-          <input placeholder="Your Email Address" type="email" tabindex="2" required>
-        </fieldset>
-        <fieldset>
-          <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
-        </fieldset>
-         <fieldset>
-          <textarea placeholder="Your Message" tabindex="4" required></textarea>
-        </fieldset>
-        <fieldset style="text-align: center">
-          <button  name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-        </fieldset>
-      </form>
+      <fieldset>
+          <input id="name" placeholder="Your name" type="text" tabindex="1" required>
+      </fieldset>
+      <fieldset>
+          <input id="user_email" placeholder="Your Email Address" type="email" tabindex="2" required>
+      </fieldset>
+      <fieldset>
+          <input id="phone" placeholder="Your Phone Number (optional)" type="tel" tabindex="3">
+      </fieldset>
+      <fieldset>
+          <textarea id="message" placeholder="Your Message" tabindex="4" required></textarea>
+      </fieldset>
+      <fieldset style="text-align: center">
+          <button type="submit" id="contact-submit">Submit</button>
+      </fieldset>
+  </form>
+  <div class="thank-you-message">
+    Thank you, I will reach out to you asap!
+</div>
 </div>
 <footer id="footer" class="footer center-align"></footer> 
 
@@ -60,9 +103,8 @@
       });  
       $("#footer").load("elements/footer.html", function() {
           $("body").fadeIn(1000);
-      });                                 
-
-
+      });                                
 </script>
+
 </body>
 </html>

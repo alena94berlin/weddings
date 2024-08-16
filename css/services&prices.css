@@ -58,29 +58,30 @@ fieldset {
 	border: medium none !important;
 	margin: 0 0 10px;
 	min-width: 100%;
-	padding: 0;
+	padding: 0 !important;
 	width: 100%;
 }
 
 
 #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
-	width:100%;
+	width:96%;
 	border:1px solid #CCC;
 	background:#FFF;
-	margin:0 0 5px;
-	padding: 2px;
+	padding: 5px 10px;
     font-size: large !important;
 }
 
 #contact input:focus, #contact textarea:focus {
-  border-bottom: 1px solid antiquewhite !important;
+  border-bottom: 1px solid rgb(253, 242, 228) !important;
   box-shadow: 0 1px 0 0 antiquewhite !important;
 }
 
 #contact textarea {
 	height:100px;
-	max-width:100%;
+	width:99%;
   resize:none;
+  padding: 7px 10px;
+  border:1px solid #CCC;
 }
 
 #contact button[type="submit"] {
@@ -107,6 +108,17 @@ fieldset {
 form > h2{
   background-color: antiquewhite;
   margin-bottom: 10px !important;
+}
+
+
+.thank-you-message {
+    display: none;
+    padding: 20px;
+    background-color: rgb(255, 249, 241);
+    border: 1px solid rgba(250, 235, 215, 0.918);
+    border-radius: 5px;
+    color: #155724;
+    font-size: 1.2em;
 }
 
 
