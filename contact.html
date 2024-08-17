@@ -8,10 +8,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">  <!--Intro-->
   <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="../js/email.js"></script>
 </head>
 
 <body>
-    <header id="header" class="center-align"></header>
+    <header id="header" class="center-align" autofocus></header>
 
 <div class="container">
     
@@ -20,21 +22,24 @@
 
         <h2>Let me know what project you have in mind and I will get back to you ASAP!</h2>
         <fieldset>
-          <input placeholder="Your name" type="text" tabindex="1" required autofocus>
-        </fieldset>
-        <fieldset>
-          <input placeholder="Your Email Address" type="email" tabindex="2" required>
-        </fieldset>
-        <fieldset>
-          <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
-        </fieldset>
-         <fieldset>
-          <textarea placeholder="Your Message" tabindex="4" required></textarea>
-        </fieldset>
+          <input id="name" placeholder="Your name" type="text" tabindex="1" required>
+      </fieldset>
+      <fieldset>
+          <input id="user_email" placeholder="Your Email Address" type="email" tabindex="2" required>
+      </fieldset>
+      <fieldset>
+          <input id="phone" placeholder="Your Phone Number (optional)" type="tel" tabindex="3">
+      </fieldset>
+      <fieldset>
+          <textarea id="message" placeholder="Your Message" tabindex="4" required></textarea>
+      </fieldset>
         <fieldset style="text-align: center">
           <button  name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
         </fieldset>
       </form>
+      <div class="thank-you-message">
+        Thank you, your message has been sent!
+    </div>
     </div>
    
 <footer id="footer" class="footer center-align"></footer> 

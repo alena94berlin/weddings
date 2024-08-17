@@ -9,46 +9,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script type="text/javascript">
-      (function() {
-          // https://dashboard.emailjs.com/admin/account
-          emailjs.init({
-            publicKey: "bYlDXRKw2Yt6qjyD8",
-          });
-      })();
-  </script>
-  <script type="text/javascript">
-      window.onload = function() {
-          document.getElementById('contact').addEventListener('submit', function(event) {
-              event.preventDefault();
-               // Collect form data
-            const name = document.getElementById('name').value;
-            const user_email = document.getElementById('user_email').value;
-            const phone = document.getElementById('phone').value;
-            const message = document.getElementById('message').value;
-
-            // Send the email using EmailJS
-            emailjs.send('service_trmf7ng', 'template_6qs5y6s',  {
-                name: name,
-                user_email : user_email,
-                phone: phone || '',
-                message: message,
-
-            })
-            .then(() => {
-                    // Hide the form and show the thank you message
-                    document.getElementById('contact').style.display = 'none';
-                    document.querySelector('.thank-you-message').style.display = 'block';
-                }, (error) => {
-                    console.log('FAILED...', error);
-                    alert('Sorry, something went wrong. Please try again later.');
-                });
-            });
-        };
-  </script>
-
+  <script src="../js/email.js"></script>
 </head>
 
 <body>
@@ -89,7 +51,7 @@
       </fieldset>
   </form>
   <div class="thank-you-message">
-    Thank you, I will reach out to you asap!
+    Thank you, I will reach out to you ASAP!
 </div>
 </div>
 <footer id="footer" class="footer center-align"></footer> 

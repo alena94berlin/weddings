@@ -52,6 +52,18 @@ fieldset {
     position: relative;
 }
 
+.thank-you-message {
+    display: none;
+    padding: 40px;
+    background-color: rgb(255, 249, 241);
+    border: 1px solid rgba(250, 235, 215, 0.918);
+    border-radius: 5px;
+    color: #155724;
+    font-size: 1.2em;
+    text-align: center;
+    height: 14%;
+}
+
 #contact button[type="submit"]:hover {
 	background: rgb(228, 214, 195);
 	-webkit-transition: background 0.3s ease-in-out;
