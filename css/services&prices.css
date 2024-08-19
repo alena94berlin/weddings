@@ -15,12 +15,16 @@ a{
 
 .frame-free {
   position: relative;
-  padding: 10px;
+  padding: 10px 30px 20px 30px;
   margin: 10px auto !important;
   max-width: 80%;
-  background-color: transparent;
   margin-bottom: 50px !important;
   text-align: justify !important;
+  pointer-events: none;
+}
+.frame-free a{
+  pointer-events: all;
+  z-index: 10000 !important;
 }
 
 .frame-free:before,
@@ -28,8 +32,7 @@ a{
     content: "";
     position: absolute;
     border: 1px solid #bba58e;
-    transition: all 0.25s ease;
-    opacity: 1;
+
 }
 
 .frame-free:before {
@@ -139,6 +142,7 @@ fieldset {
   .frame-free {
 
     max-width: 98%;
+    padding: 10px;
   }
   
 form{
