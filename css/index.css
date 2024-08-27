@@ -112,18 +112,6 @@
       margin: 0 0 !important;
       width: 100%;
     }
-
-    .pricelist{
-      width: 100%;
-    }
-
-    .pricelist img{
-      width: auto;
-      height: auto;
-      margin: 0 auto;
-      min-height: 28%;
-      max-width: 100%;
-  }
   
   h5{
     font-size: 0.9rem !important;

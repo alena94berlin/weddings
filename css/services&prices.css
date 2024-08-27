@@ -2,22 +2,19 @@ a{
   color:#a07e4a !important;
 }
 
-.pricelist img
-{  
-  width: 100% !important;
-  margin: 0px auto;
-}
 
-
-.pricelist img{
-  margin-bottom: 30px;
+#pricelist-div{
+  display: grid;
+  justify-content: center;
+  width: 80% !important;
+  margin: 0px auto 30px auto;
 }
 
 .frame-free {
   position: relative;
   padding: 10px 30px 20px 30px;
   margin: 10px auto !important;
-  max-width: 80%;
+  max-width: 763px;
   margin-bottom: 50px !important;
   text-align: justify !important;
   pointer-events: none;
@@ -126,18 +123,15 @@ fieldset {
 }
 
 
-@media screen and (max-width: 670px){
-
-    .pricelist{
-      width: 100%;
-    }
-
-    .pricelist img{
-      width: auto;
-      height: auto;
-      margin: 0 auto;
-      min-height: 28%;
-      max-width: 100%;
+@media screen and (max-width: 770px){
+  #pricelist-div{
+    width: 100% !important;
+  }
+    
+    #pricelist-div img{
+      position: relative;
+       max-width: 100%;
+      height: fit-content;
   }
   .frame-free {
 
