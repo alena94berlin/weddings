@@ -13,12 +13,12 @@ footer a{
   font-size: 0.9rem !important;
   position: relative;
   margin-top: 50px !important;
-  
+  min-height: 50px;
 }
 
 hr{
   margin: 0 auto !important;
-  width: 60% !important;
+  width: 76% !important;
 }
 
 .footer-col{

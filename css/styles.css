@@ -5,11 +5,15 @@ html, body, header, footer, .container{
     background: white !important;
     font-family: "Montserrat", sans-serif;
     }
-
+    body {
+        min-height: 100vh;
+        margin: 0;
+      }
     
   .container {
     margin-top: 20px;
-    width: 60% !important;
+    width: 76% !important;
+   
   }
 
 h1 {
