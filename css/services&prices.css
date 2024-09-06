@@ -131,7 +131,8 @@ fieldset {
     #pricelist-div img{
       position: relative;
        max-width: 100%;
-      height: fit-content;
+       height: auto; 
+       object-fit: contain;
   }
   .frame-free {
 
