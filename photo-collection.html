@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link type="text/css" href="css/styles.css" rel="stylesheet">
+  <link type="text/css" href="css/photo-collection.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <title>Timeless - Wedding Videography</title>
+</head>
+<body>
+
+  <header id="header" class="center-align" autofocus> </header>
+
+      <div class="container">
+        <h1 class="center-align">Photo Collection</h1>
+        <div id="gallery" class="row"></div>
+    </div>
+    <footer id="footer" class="footer center-align"></footer> 
+    <!-- Materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+ 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+   $(document).ready(function() {
+    $("#header").load("elements/header.html", function() {
+          $("body").fadeIn(1000);
+      });    
+    $("#footer").load("elements/footer.html", function() {
+          $("body").fadeIn(1000);
+      }); 
+      
+      const images = [];
+      const imageDirectory = "media/img/photo-collection/";
+      const totalImages = 10;
+
+  for (let i = 1; i <= totalImages; i++) {
+    images.push(`${imageDirectory}/${i}.jpg`); 
+    }
+      console.log(images);
+
+      function createGallery() {
+    const gallery = document.getElementById('gallery');
+
+    // Create 4 columns
+    for (let col = 0; col < 3; col++) {
+        const columnDiv = document.createElement('div');
+        columnDiv.classList.add('column');
+
+        // Divide the images between columns
+        for (let i = col; i < images.length; i += 3) {
+            const img = document.createElement('img');
+            img.src = images[i];
+            columnDiv.appendChild(img);
+        }
+
+        gallery.appendChild(columnDiv);
+    }
+}
+
+// Initialize gallery
+createGallery();
+
+      });
+  </script>
+
+</html>
