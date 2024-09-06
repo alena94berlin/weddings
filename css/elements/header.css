@@ -161,7 +161,7 @@ a {
   
     #hiddenlogo{
       visibility: visible;
-      width: 200px !important;
+      width: 163px !important;
       height: 91px;
       position: relative;
     margin-left: auto;
@@ -169,7 +169,7 @@ a {
     
     }
     .brand-logo{
-      margin-left: 20px !important;
+      margin-left: 5px !important;
       width: 157px;
       height: 79px;
       margin-top: 0 !important;
