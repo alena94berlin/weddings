@@ -35,36 +35,35 @@
       
       const images = [];
       const imageDirectory = "media/img/photo-collection/";
-      const totalImages = 15;
+      const totalImages = 14;
 
-  for (let i = 1; i <= totalImages; i++) {
-    images.push(`${imageDirectory}/${i}.jpg`); 
-    }
-      console.log(images);
+      for (let i = 1; i <= totalImages; i++) {
+          images.push(`${imageDirectory}/${i}.jpg`); 
+      }
 
       function createGallery() {
-    const gallery = document.getElementById('gallery');
+        const gallery = document.getElementById('gallery');
 
-    // Create 4 columns
-    for (let col = 0; col < 3; col++) {
-        const columnDiv = document.createElement('img-div');
-        columnDiv.classList.add('img-column');
+        // Create 3 columns
+        for (let col = 0; col < 3; col++) {
+            const columnDiv = document.createElement('div');  // Changed from 'img-div' to 'div'
+            columnDiv.classList.add('img-column');
 
-        // Divide the images between columns
-        for (let i = col; i < images.length; i += 3) {
-            const img = document.createElement('img');
-            img.src = images[i];
-            columnDiv.appendChild(img);
+            // Divide the images between columns
+            for (let i = col; i < images.length; i += 3) {
+                const img = document.createElement('img');
+                img.src = images[i];
+                columnDiv.appendChild(img);
+            }
+
+            gallery.appendChild(columnDiv);
         }
+      }
 
-        gallery.appendChild(columnDiv);
-    }
-}
+      // Initialize gallery
+      createGallery();
 
-// Initialize gallery
-createGallery();
-
-      });
+   });
   </script>
 
 </html>
