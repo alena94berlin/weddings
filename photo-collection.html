@@ -33,6 +33,7 @@
           $("body").fadeIn(1000);
       }); 
       
+      let isScriptExecuted = false;
       const images = [];
       const imageDirectory = "media/img/photo-collection/";
       const totalImages = 14;
@@ -42,6 +43,8 @@
       }
 
       function createGallery() {
+        if (!isScriptExecuted) {
+          isScriptExecuted = true;
         const gallery = document.getElementById('gallery');
 
         // Create 3 columns
@@ -57,6 +60,7 @@
             }
 
             gallery.appendChild(columnDiv);
+          }
         }
       }
 
