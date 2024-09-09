@@ -45,16 +45,6 @@ hr{
   margin-top: 15px !important;
 }
 
-.fa {
-  font-size: x-large !important;
-  margin: 0px 5%;
-  color: #a07e4a;
-}
-
-.fa:hover {
-  opacity: 0.7;
-}
-
 .infinite-icon{
   width: 100px;
   margin-top: -15px;
@@ -64,7 +54,35 @@ hr{
   margin-top: -5px !important;
 }
 
-@media screen and (max-width: 1100px){
+
+@media screen and (min-width: 800px){
+
+.socialMediaLargeScreen{
+  visibility: visible !important;
+  margin-top: 11px !important;
+}
+.socialMediaSmallScreen{
+  visibility: hidden !important;
+}
+.fa {
+  font-size: large !important;
+  margin: 5px 10px;
+  padding: 0px, 20px;
+  color: #a07e4a;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+#emailAndPhone{
+  left: 50px !important;
+}
+
+}
+
+
+@media screen and (max-width: 800px){
 .footer{
   position: relative;
   width:100%;
@@ -74,9 +92,23 @@ hr{
   font-family: "Montserrat", sans-serif;
   font-size: 0.8rem !important;
 }
+.socialMediaLargeScreen{
+  visibility: hidden !important;
+  width: 0px !important;
+  }
+  #socialMediaLargeScreenID{
+    visibility: hidden !important;
+    width: 0px !important;
+  }
+.socialMediaSmallScreen{
+  visibility: visible !important;
+}
+.socialMediaSmallScreen a{
+  padding: 20px, 10px;
+}
+
 .fa{
-  font-size: medium !important;
-  margin: 0px 5px;
+  margin: 10px 20px;
 }
 
 .infinite-icon{

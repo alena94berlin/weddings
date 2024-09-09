@@ -27,10 +27,14 @@
 
 @media screen and (max-width: 670px){
 
+  h2{
+    padding: 0px !important;
+    font-size: smaller !important;
+  }
   .video-container {
     width: 100% !important;
     display: inline-block;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
   }
 
   .video-with-description{
