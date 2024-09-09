@@ -37,7 +37,7 @@
 
         const images = [];
         const imageDirectory = "media/img/photo-collection/";
-        const totalImages = 15;
+        const totalImages = 14;
 
         for (let i = 1; i <= totalImages; i++) {
             images.push(`${imageDirectory}/${i}.jpg`);
@@ -55,7 +55,7 @@
                 for (let i = col; i < images.length; i += 3) {
                     const img = document.createElement('img');
                     img.src = images[i];
-                    img.onerror = function() { this.src = 'media/img/photo-collection/3.jpg'; };  // Fallback for broken image
+                    img.onerror = function() { this.src = 'media/img/photo-collection/5.jpg'; };  // Fallback for broken image
                     columnDiv.appendChild(img);
                 }
 
