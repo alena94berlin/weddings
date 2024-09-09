@@ -52,7 +52,7 @@
                 columnDiv.classList.add('img-column');
 
                 // Divide the images between columns
-                for (let i = col; i < images.length; i += 4) {
+                for (let i = col; i < images.length; i += 3) {
                     const img = document.createElement('img');
                     img.src = images[i];
                     img.onerror = function() { this.src = 'media/img/photo-collection/0.jpg';  console.log(`Image ${images[i]} not found, skipping...`); };  // Fallback for broken image
