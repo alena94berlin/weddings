@@ -25,49 +25,49 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
   <script>
-   $(document).ready(function() {
-    $("#header").load("elements/header.html", function() {
-          $("body").fadeIn(1000);
-      });    
-    $("#footer").load("elements/footer.html", function() {
-          $("body").fadeIn(1000);
-      }); 
-      
-      let isScriptExecuted = false;
-      const images = [];
-      const imageDirectory = "media/img/photo-collection/";
-      const totalImages = 14;
+  (function() {
+    // This code block will execute immediately and only once
+    $(document).ready(function() {
+        $("#header").load("elements/header.html", function() {
+            $("body").fadeIn(1000);
+        });
+        $("#footer").load("elements/footer.html", function() {
+            $("body").fadeIn(1000);
+        });
 
-      for (let i = 1; i <= totalImages; i++) {
-          images.push(`${imageDirectory}/${i}.jpg`); 
-      }
+        const images = [];
+        const imageDirectory = "media/img/photo-collection/";
+        const totalImages = 15;
 
-      function createGallery() {
-        if (!isScriptExecuted) {
-          isScriptExecuted = true;
-        const gallery = document.getElementById('gallery');
-
-        // Create 3 columns
-        for (let col = 0; col < 3; col++) {
-            const columnDiv = document.createElement('div');  // Changed from 'img-div' to 'div'
-            columnDiv.classList.add('img-column');
-
-            // Divide the images between columns
-            for (let i = col; i < images.length; i += 3) {
-                const img = document.createElement('img');
-                img.src = images[i];
-                columnDiv.appendChild(img);
-            }
-
-            gallery.appendChild(columnDiv);
-          }
+        for (let i = 1; i <= totalImages; i++) {
+            images.push(`${imageDirectory}/${i}.jpg`);
         }
-      }
 
-      // Initialize gallery
-      createGallery();
+        function createGallery() {
+            const gallery = document.getElementById('gallery');
 
-   });
+            // Create 3 columns
+            for (let col = 0; col < 3; col++) {
+                const columnDiv = document.createElement('div');
+                columnDiv.classList.add('img-column');
+
+                // Divide the images between columns
+                for (let i = col; i < images.length; i += 3) {
+                    const img = document.createElement('img');
+                    img.src = images[i];
+                    img.onerror = function() { this.src = 'path/to/placeholder.jpg'; };  // Fallback for broken image
+                    columnDiv.appendChild(img);
+                }
+
+                gallery.appendChild(columnDiv);
+            }
+        }
+
+        // Initialize gallery
+        createGallery();
+    });
+})();
+
   </script>
 
 </html>
