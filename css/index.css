@@ -199,7 +199,10 @@ h4{
     .video-container video{
       max-width: 100% !important;
     }
-  
+  h4{
+    font-size: 18px !important;
+  }
+
   h5{
     font-size: 0.9rem !important;
     margin-bottom: 0px !important;
@@ -208,13 +211,13 @@ h4{
   .introduction h6{
     font-size: 0.9rem !important;
     line-height: 19px !important;
-    padding-top: 0px !important;
+    padding-top: 10px !important;
   }
 
   .see-more-btn {
 
     margin: 10px 0 !important;
-    width: 162px;
+    width: 106px;
   }
 
   #pricelist-div > img{

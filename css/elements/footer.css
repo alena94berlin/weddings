@@ -127,6 +127,7 @@ hr{
 #row-footer{
   width: 95% !important;
   margin-bottom: 10px !important;
+  margin-left: -15px;
 }
 
 
