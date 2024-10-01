@@ -9,6 +9,8 @@
   <link type="text/css" href="css/elements/creative-button.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
   <script src="../js/email.js"></script>
 </head>
 <body>
@@ -21,8 +23,7 @@
 <div class="container">
   <div class="introduction center-align">
     <div src="" class="introduction-box">
-         <h5>Hello, I'm Alena!</h5>
-        <h6>I'm starting a videography business and offering free wedding services to build my portfolio! Want to know more?</h6>
+        <h6>Timeless photo / videography is a production company capturing weddings and events globally. Based in South Florida.</h6>
         <div id="ideas-button-div">       
           <a id="morebtn" class="btn--gold">Read more</a>
        </div>
@@ -30,26 +31,46 @@
   </div>
 
   <div class="floating-images center-align"> 
-    <img src="media/img/floating-images.gif" alt="Devotion - wedding videography" />   
+    <img src="media/img/floating-images.gif" alt="Timeless - wedding videography" />   
   </div>
 
+  <div class="video-with-description">
+    <h4>Films</h4>
+    <div class="video-container">
+        <video class="responsive-video" preload controls poster="media/videos/posters/palatka.jpg"  controls>
+           <source src="media/videos/palatkawed.mov" type="video/mp4">
+        </video>  
+   </div>
+  </div>
+   <a class="see-more-btn" onclick="location.href='video-collection.html'">MORE FILMS</a>
+   <!--   <h2 class="video-title">Danielle and Stephen's wedding at Ever After Farms. Florida 2024</h2> -->
+  
+  <br/>
+  <br/>
 
-  <div id="free-services" class="frame-free">
+  <!-- <div id="free-services" class="frame-free">
     <h2 style="background-color: white;">Free wedding video or love story!</h2>
 
     <p>I’m excited to offer my videography services at no cost while I build my portfolio. Just because it’s free doesn’t mean it’s anything less than professional. You’ll receive the same high-quality video and the opportunity to make adjustments before the final cut, just as you would with any professional videographer — only this time, it’s completely free! This offer is only available until November. Based in West Palm Beach, I am available to travel within a 1.5-hour radius, covering areas including Miami, Fort Pierce, and everywhere in between.</p>
     <p>I'm a huge admirer of Aaron Novak's work 
     (check it out <a href="https://www.aaronnovakfilms.com/films" target="_blank">here</a>), 
     so you can expect a similar cinematic style in my films.</p>
-  </div> 
+  </div> -->
+
     <div id="pricelist-div">
-      <h2>Wedding packages:</h2>
-      <img src="media/img/pricelist.jpg"  alt="Price List"/>  
-    </div>
+      <br/>
+      <h4>Wedding packages</h4>
+
+      <picture>
+        <source media="(min-width: 900px)" srcset="media/img/pricelist-big.png">
+        <source media="(max-width: 900px)" srcset="media/img/pricelist-small.png">
+        <img src="media/img/pricelist-big.png" alt="IfItDoesntMatchAnyMedia">
+    </picture>
+    </div> 
 <br/>
 
   <form id="contact">
-    <h2>Interested? Got questions? Let's chat!</h2>
+    <h4>Interested? Got questions? Let's chat!</h4>
     <fieldset>
         <input id="name" placeholder="Your name" type="text" tabindex="1" required>
     </fieldset>

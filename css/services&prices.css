@@ -4,11 +4,20 @@ a{
 
 
 #pricelist-div{
-  display: grid;
   justify-content: center;
-  width: 80% !important;
-  margin: 0px auto 30px auto;
+  width: 70% !important;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
+#pricelist-div img{    
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  }
 
 .frame-free {
   position: relative;
@@ -64,63 +73,13 @@ fieldset {
 }
 
 
-#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
-	width:96%;
-	border:1px solid #CCC;
-	background:#FFF;
-	padding: 5px 10px;
-    font-size: large !important;
-}
-
-#contact input:focus, #contact textarea:focus {
-  border-bottom: 1px solid rgb(253, 242, 228) !important;
-  box-shadow: 0 1px 0 0 antiquewhite !important;
-}
-
-#contact textarea {
-	height:100px;
-	width:99%;
-  resize:none;
-  padding: 7px 10px;
-  border:1px solid #CCC;
-}
-
-#contact button[type="submit"] {
-	cursor:pointer;
-	border:none;
-	background: antiquewhite;
-	color:#535353;
-	margin:0 0 5px;
-	padding:10px;
-	font-size:15px;
-    width: 40%;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-}
-
-#contact button[type="submit"]:hover {
-	background: rgb(228, 214, 195);
-	-webkit-transition: background 0.3s ease-in-out;
-	-moz-transition: background 0.3s ease-in-out;
-	transition:background-color 0.3s ease-in-out;
-}
-
  h2{
   background-color: antiquewhite;
   margin-bottom: 10px !important;
 }
 
 
-.thank-you-message {
-    display: none;
-    padding: 20px;
-    background-color: rgb(255, 249, 241);
-    border: 1px solid rgba(250, 235, 215, 0.918);
-    border-radius: 5px;
-    color: #155724;
-    font-size: 1.2em;
-}
+
 
 
 @media screen and (max-width: 770px){
