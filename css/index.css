@@ -81,7 +81,7 @@
 }
 
 .see-more-btn:active, :after, ::before, :focus {
-  background-color: #ffdeb2 !important;
+  background-color: transparent !important;
 }
 
 .see-more-btn:hover{
@@ -114,7 +114,20 @@ h4{
     justify-self: center;
 }
 
+form{
+  width: 70%;
+  margin: 20px auto;
 
+}
+
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0 !important;
+  width: 100%;
+}
 
 
 #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {

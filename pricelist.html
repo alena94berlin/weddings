@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="text/css" href="css/styles.css" rel="stylesheet">
+  <link type="text/css" href="css/pricelist.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">  <!--Intro-->
+  <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="../js/email.js"></script>
+</head>
+
+<body>
+  <header id="header" autofocus></header>
+  <div class="container center-align">
+
+    <h1 style="background-color: transparent !important;">Wedding Packages</h1>
+
+    
+      <div id="pricelist-div" class="pricelist">
+        <picture>
+          <source media="(min-width: 900px)" srcset="media/img/pricelist-big.png">
+          <source media="(max-width: 900px)" srcset="media/img/pricelist-small.png">
+          <img src="media/img/pricelist-big.png" alt="IfItDoesntMatchAnyMedia">
+      </picture>
+      </div>
+      <br>Engangements / love story videos start with $400. 
+
+
+</div>
+<footer id="footer" class="footer center-align"></footer> 
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+<script>
+ 
+      $("#header").load("elements/header.html", function() {
+          $("body").fadeIn(1000);
+      });  
+      $("#footer").load("elements/footer.html", function() {
+          $("body").fadeIn(1000);
+      });                                
+</script>
+
+</body>
+</html>

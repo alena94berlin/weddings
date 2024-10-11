@@ -8,9 +8,13 @@ h2{
 	font-weight: 200 !important;
 }
 
+#container-contact{
+	width: 55% !important;
+}
 
 fieldset {
 	border: medium none !important;
+	border: none !important;
 	margin: 0 0 10px;
 	min-width: 100%;
 	padding: 0;
@@ -93,6 +97,9 @@ fieldset {
 
 #contact {
 	padding: 0px 20px;  
+}
+#container-contact{
+	width: 95% !important;
 }
 
 }
