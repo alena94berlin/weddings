@@ -43,7 +43,7 @@
         </video>  
    </div>
   </div>
-   <a class="see-more-btn" onclick="location.href='video-collection.html'">MORE FILMS</a>
+   <button class="see-more-btn" onclick="location.href='video-collection.html'">MORE FILMS</button>
    <!--   <h2 class="video-title">Danielle and Stephen's wedding at Ever After Farms. Florida 2024</h2> -->
   
   <br/>
@@ -122,12 +122,12 @@
         }, 800);
       });
 */
-      $('#morebtn').click(function(e) {
-         e.preventDefault();
-        $('html, body').animate({
-          scrollTop: $('#free-services').offset().top
-        }, 800);
-      });   
+      // $('#morebtn').click(function(e) {
+      //    e.preventDefault();
+      //   $('html, body').animate({
+      //     scrollTop: $('#free-services').offset().top
+      //   }, 800);
+      // });   
     
       $("#header").load("elements/header.html", function() {
           $("body").fadeIn(1000);

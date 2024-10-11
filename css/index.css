@@ -68,19 +68,24 @@
 
 .see-more-btn {
   font-family: "Josefin Slab", serif;
-  font-style: italic;
-  padding: 10px 20px;
+  padding: 13px 20px 8px 20px;
   font-size: 1.2em;
   color: #a07e4a;
   cursor: pointer;
-  text-decoration: underline;
+  border: 1px solid #a07e4a;
+  border-radius: 30px;
+  background-color: white;
   margin: 10px 0;
   float: right;
   margin-right: 170px;
 }
 
-.see-more-btn:hover {
-  color: #cfad80;
+.see-more-btn:active, :after, ::before, :focus {
+  background-color: #ffdeb2 !important;
+}
+
+.see-more-btn:hover{
+  color: #cfad80 !important;
 }
 
 
@@ -217,7 +222,7 @@ h4{
   .see-more-btn {
 
     margin: 10px 0 !important;
-    width: 106px;
+    width: 150px;
   }
 
   #pricelist-div > img{

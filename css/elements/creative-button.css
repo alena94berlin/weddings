@@ -31,6 +31,7 @@
       height: 100%;
       transition: all 0.25s ease;
       opacity: 1;
+      background-color: transparent !important;
     }
     &:before {
       top: -0.25px;
