@@ -120,6 +120,10 @@ form{
 
 }
 
+#note{
+  float: right;
+  margin-right: 16%;
+}
 
 fieldset {
   border: medium none !important;
