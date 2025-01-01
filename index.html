@@ -43,17 +43,33 @@
         </video>  
    </div> -->
    <div class="video-container">
-    <!-- <video controls width="800" height="450">
-      <iframe src="https://drive.google.com/file/d/1Roiq35SAFYOJck56hx8ij-t8LvXq9-Bc/preview" width="640" height="480" allow="autoplay"></iframe>
-     
-    </video> --> 
+    <div style="position: relative; width: 640px; height: 360px;">
+      <!-- Poster Image -->
+      <img 
+          src="media/videos/hm.mov" 
+          alt="Poster" 
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; cursor: pointer;" 
+          onclick="this.style.display='none'; document.getElementById('youtube-video').src += '&autoplay=1';">
+  
+      <!-- YouTube Video -->
+      <iframe 
+          id="youtube-video" 
+          src="https://www.youtube.com/embed/aUlKr6hXcRo?rel=0&vq=hd1080" 
+          width="640" 
+          height="360" 
+          frameborder="0" 
+          allow="autoplay; fullscreen" 
+          allowfullscreen 
+          style="display: block;">
+      </iframe>
+  </div>
     
     <!-- <iframe src="https://drive.google.com/file/d/1Roiq35SAFYOJck56hx8ij-t8LvXq9-Bc/preview" width="600"  poster="media/videos/posters/hm.jpg" height="480" allow="autoplay"  allow="autoplay; fullscreen" 
     allowfullscreen></iframe> -->
 
-      <video class="responsive-video" preload controls poster="media/videos/posters/hm.jpg" controls>
+      <!-- <video class="responsive-video" preload controls poster="media/videos/posters/hm.jpg" controls>
          <source src="media/videos/hm.mov" type="video/mp4">
-      </video>  
+      </video>   -->
 
 </div>
   </div>
