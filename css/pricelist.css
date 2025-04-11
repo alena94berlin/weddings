@@ -3,16 +3,14 @@ a{
 }
 
 
-#pricelist-div{
+.pricelist-div{
   justify-content: center;
   width: 70% !important;
-  margin-top: 30px;
-  margin-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
-#pricelist-div img{    
+.pricelist-div img{    
   width: 100% !important;
   margin-left: auto;
   margin-right: auto;
@@ -22,13 +20,20 @@ a{
 
 
 @media screen and (max-width: 770px){
-  #pricelist-div{
+
+    
+  #video-pricelist-div > img{
+    src: url("/media/img/pricelist-small1200.png");
+  }
+
+  .pricelist-div{
     width: 100% !important;
   }
     
-  #pricelist-div > img{
-    src: url("/media/img/pricelist-small.png");
+  #photo-pricelist-div > img{
+    src: url("/media/img/photo-pricelist-small.png");
   }
+
   .frame-free {
 
     max-width: 98%;

@@ -242,8 +242,11 @@ fieldset {
     width: 150px;
   }
 
-  #pricelist-div > img{
+  #video-pricelist-div > img{
     src: url("/media/img/pricelist-small.png");
+  }
+  #photo-pricelist-div > img{
+    src: url("/media/img/photo-pricelist-small.png");
   }
 }
 
