@@ -6,8 +6,6 @@ a{
 #pricelist-div{
   justify-content: center;
   width: 70% !important;
-  margin-top: 30px;
-  margin-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -29,6 +27,15 @@ a{
   #pricelist-div > img{
     src: url("/media/img/pricelist-small.png");
   }
+
+  #pricelist-div{
+    width: 100% !important;
+  }
+    
+  #pricelist-div > img{
+    src: url("/media/img/photo-pricelist-small.png");
+  }
+
   .frame-free {
 
     max-width: 98%;
