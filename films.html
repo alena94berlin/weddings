@@ -16,6 +16,31 @@
     <div class="container">
       <h1 class="center-align">Films</h1>
       <div class="video-collection">     
+
+        <div class="video-container">
+           
+          <!-- Poster Image -->
+          <img 
+              src="media/videos/sd.png" 
+              alt="Poster" 
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; cursor: pointer;" 
+              onclick="this.style.display='none'; document.getElementById('youtube-video').src += '&autoplay=1';">
+      
+          <!-- YouTube Video -->
+          <iframe 
+              id="youtube-video" 
+              src="https://www.youtube.com/embed/Rd_YnoDfMhc?rel=0&vq=hd1080" 
+              width="760" 
+              height="440" 
+              frameborder="0" 
+              allow="autoplay; fullscreen" 
+              allowfullscreen 
+              style="display: block;">
+          </iframe>
+     
+      </div>
+    </div>      
+
         <div class="video-with-description">
           <div class="video-container">
            
