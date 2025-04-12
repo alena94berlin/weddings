@@ -96,6 +96,8 @@
 .video-container{
   display: grid;
   padding-bottom: 42.25% !important;
+  width: 78% !important;
+  margin: auto;
 }
 
 .video-container video{
