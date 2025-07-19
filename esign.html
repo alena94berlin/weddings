@@ -50,7 +50,6 @@
       font-size: 1rem;
       border: none;
       border-bottom: 2px solid #ccc;
-      border-radius: 0;
       background: transparent;
     }
     button {
@@ -74,106 +73,66 @@
       text-align: center;
       margin-top: 1rem;
     }
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      margin-bottom: 2rem;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 0.5rem;
-    }
-    nav a {
-      color: #333;
-      text-decoration: none;
-      font-weight: bold;
-      padding: 0.5rem 1rem;
-    }
-    nav a:hover, nav a.active {
-      text-decoration: underline;
-      border-bottom: 2px solid #4CAF50;
-    }
-    .signature-section {
-      margin-top: 2rem;
-      font-size: 1rem;
-    }
-    .signature-label {
-      font-weight: bold;
-    }
     .signature-initials {
       font-family: 'Brush Script MT', cursive;
       font-weight: bold;
       font-style: italic;
       font-size: 1.3rem;
     }
-    #emailModal {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background: #fefefe;
-      border-radius: 10px;
-      padding: 2rem;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
-      z-index: 1000;
-      display: none;
-      width: 90%;
-      max-width: 500px;
-    }
-    #overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.5);
-      z-index: 999;
-      display: none;
-    }
-    .close-btn {
-      background: #e74c3c;
-      color: white;
-      border: none;
-      padding: 0.5rem 1rem;
-      cursor: pointer;
-      float: right;
-      margin-top: 1rem;
-    }
-    #downloadPDF {
-      display: none;
-      margin-top: 2rem;
-    }
   </style>
 </head>
 <body>
-  <div id="overlay"></div>
-  <div id="emailModal">
-    <h2>Enter Both Parties' Names and Emails</h2>
-    <form id="emailForm">
-      <input type="text" id="name1" placeholder="Your Name (e.g. Alena)" required />
-      <input type="email" id="email1" placeholder="Your Email" required />
-      <input type="text" id="name2" placeholder="Client's Name (e.g. Amy Laviana)" required />
-      <input type="email" id="email2" placeholder="Client's Email" required />
-      <button type="submit">Submit & Lock Contract</button>
-    </form>
-    <button class="close-btn" onclick="closeEmailModal()">Close</button>
-    <p class="success" id="emailSuccessMsg" style="display:none;">Emails saved. Contract is locked. Parties can now sign.</p>
-  </div>
-
   <header>
-    <h1>Electronic Signature Portal</h1>
+    <h1>Timeless Wedding Photo</h1>
+    <p>Wedding Photography Contract</p>
   </header>
 
-  <nav id="nav-tabs">
-    <a href="#contract" class="active">Contract</a>
-    <a href="#sign">Sign</a>
-    <a href="#" id="partiesTab" onclick="openEmailModal()">Parties</a>
-  </nav>
-
-  <div class="container" id="contract">
+  <div class="container">
     <h2>Wedding Photography Agreement</h2>
-    <p>Please read the contract below and sign at the bottom.</p>
-    <div id="contractText" class="contract" contenteditable="true">
-WEDDING PHOTOGRAPHY AGREEMENT
+    <div id="contractText" class="contract" contenteditable="true"></div>
+  </div>
+
+  <div class="container" id="signSection">
+    <h2>Sign the Agreement</h2>
+    <form id="signForm">
+      <input type="text" id="name" placeholder="Your Full Name" required />
+      <input type="text" id="initials" placeholder="Signature (Initials)" required />
+      <button type="submit">Sign & Submit</button>
+    </form>
+    <p class="success" id="successMsg" style="display:none;">Thank you! Your contract has been signed.</p>
+  </div>
+
+  <footer>
+    &copy; 2025 Timeless Wedding Photo. All rights reserved.
+  </footer>
+
+  <script>
+    emailjs.init("bYlDXRKw2Yt6qjyD8");
+    const contractEl = document.getElementById("contractText");
+    const saved = localStorage.getItem("signedContract");
+    if (saved) contractEl.innerHTML = saved;
+
+    document.getElementById("signForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const name = document.getElementById("name").value;
+      const initials = document.getElementById("initials").value;
+      const date = new Date().toLocaleDateString();
+
+      const signedBlock = `Signed by: ${name}\nSignature (Initials): <span class='signature-initials'>${initials}</span>\nDate: ${date}`;
+      contractEl.innerHTML = contractEl.innerHTML.replace(
+        /Signed by:\nSignature \(Initials\):\nDate:/,
+        signedBlock
+      );
+
+      localStorage.setItem("signedContract", contractEl.innerHTML);
+      document.getElementById("signForm").reset();
+      document.getElementById("signForm").style.display = "none";
+      document.getElementById("successMsg").style.display = "block";
+    });
+
+    // Initial contract content if nothing saved
+    if (!saved) {
+      contractEl.innerText = `WEDDING PHOTOGRAPHY AGREEMENT
 
 Client: Amy Laviana
 Event Date: April 11, 2026
@@ -197,107 +156,8 @@ Date:
 
 Signed by:
 Signature (Initials):
-Date:
-    </div>
-  </div>
-
-  <div class="container" id="sign">
-    <h2>Sign the Agreement</h2>
-    <form id="signForm">
-      <input type="text" id="name" placeholder="Your Full Name" required />
-      <input type="text" id="initials" placeholder="Signature (Initials)" required />
-      <button type="submit">Sign & Submit</button>
-      <p class="success" id="successMsg" style="display:none;">Thank you! Your contract has been signed.</p>
-    </form>
-    <div id="signatureDisplay" class="signature-section"></div>
-  </div>
-
-  <div class="container" style="text-align: center;">
-    <button id="downloadPDF">Download Signed Contract as PDF</button>
-  </div>
-
-  <footer>
-    &copy; 2025 Timeless Wedding Photo. All rights reserved.
-  </footer>
-
-  <script>
-    emailjs.init("bYlDXRKw2Yt6qjyD8");
-    let contractLocked = false;
-    let signaturesCount = 0;
-    let party1 = {};
-    let party2 = {};
-
-    function openEmailModal() {
-      document.getElementById("overlay").style.display = "block";
-      document.getElementById("emailModal").style.display = "block";
+Date:`;
     }
-    function closeEmailModal() {
-      document.getElementById("overlay").style.display = "none";
-      document.getElementById("emailModal").style.display = "none";
-    }
-
-    document.getElementById("emailForm").addEventListener("submit", function(e) {
-      e.preventDefault();
-      party1.name = document.getElementById("name1").value;
-      party1.email = document.getElementById("email1").value;
-      party2.name = document.getElementById("name2").value;
-      party2.email = document.getElementById("email2").value;
-
-      contractLocked = true;
-      document.getElementById("contractText").setAttribute("contenteditable", "false");
-      document.getElementById("emailSuccessMsg").style.display = "block";
-      document.getElementById("partiesTab").style.display = "none";
-      closeEmailModal();
-
-      emailjs.send('service_trmf7ng', 'template_6qs5y6s', {
-        name: party1.name,
-        user_email: party1.email,
-        message: `Hi ${party1.name},\n\nPlease review and sign your wedding photography contract with ${party2.name}: http://127.0.0.1:5500/ESign.html`
-      });
-      emailjs.send('service_trmf7ng', 'template_6qs5y6s', {
-        name: party2.name,
-        user_email: party2.email,
-        message: `Hi ${party2.name},\n\nPlease review and sign your wedding photography contract with ${party1.name}: http://127.0.0.1:5500/ESign.html`
-      });
-    });
-
-    document.getElementById("signForm").addEventListener("submit", function (e) {
-      e.preventDefault();
-      if (!contractLocked) return alert("Submit parties' emails first.");
-
-      const name = document.getElementById("name").value;
-      const initials = document.getElementById("initials").value;
-      const date = new Date().toLocaleDateString();
-
-      document.getElementById("signForm").reset();
-      document.getElementById("successMsg").style.display = "block";
-
-      const contractText = document.getElementById("contractText");
-      contractText.innerHTML = contractText.innerHTML.replace(
-        /Signed by:\nSignature \(Initials\):\nDate:/,
-        `Signed by: ${name}\nSignature (Initials): <span class="signature-initials">${initials}</span>\nDate: ${date}`
-      );
-
-      document.getElementById("signatureDisplay").innerHTML = `
-        <p><span class="signature-label">Signed:</span> <span class="signature-initials">${initials}</span><br>
-        <span class="signature-label">Name:</span> ${name}<br>
-        <span class="signature-label">Date:</span> ${date}</p>
-      `;
-
-      signaturesCount++;
-      if (signaturesCount === 2) {
-        document.getElementById("downloadPDF").style.display = "block";
-      }
-    });
-
-    document.getElementById("downloadPDF").addEventListener("click", function () {
-      const { jsPDF } = window.jspdf;
-      const doc = new jsPDF();
-      doc.setFont("Times", "Normal");
-      const content = document.getElementById("contractText").innerText;
-      doc.text(content, 10, 10, { maxWidth: 190 });
-      doc.save("Signed_Contract.pdf");
-    });
   </script>
 </body>
 </html>
