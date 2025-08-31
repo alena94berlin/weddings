@@ -244,6 +244,10 @@ fieldset {
     width: 150px;
   }
 
+	#contact{
+		margin-top: 20px:
+	}
+
   #video-pricelist-div > img{
     src: url("/media/img/pricelist-small.png");
   }
@@ -251,4 +255,5 @@ fieldset {
     src: url("/media/img/photo-pricelist-small.png");
   }
 }
+
 
